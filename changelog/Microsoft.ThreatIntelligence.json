@@ -4,19 +4,27 @@
       "ChangeList": [
         {
           "Id": "fd7c5536-089c-4a40-9c7f-aae6fd492ba6",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "physicalAddressType",
+          "ApiChange": "Resource",
+          "ChangedApiName": "whoisBaseRecord",
           "ChangeType": "Addition",
-          "Description": "Added the **physicalAddressType** enumeration type.",
-          "Target": "physicalAddressType"
+          "Description": "Added the [whoisBaseRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-whoisBaseRecord?view=graph-rest-beta) resource",
+          "Target": "whoisBaseRecord"
         },
         {
           "Id": "fd7c5536-089c-4a40-9c7f-aae6fd492ba6",
           "ApiChange": "Resource",
-          "ChangedApiName": "physicalAddress",
+          "ChangedApiName": "whoisHistoryRecord",
           "ChangeType": "Addition",
-          "Description": "Added the [physicalAddress](https://learn.microsoft.com/en-us/graph/api/resources/physicalAddress?view=graph-rest-beta) resource type.",
-          "Target": "physicalAddress"
+          "Description": "Added the [whoisHistoryRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-whoisHistoryRecord?view=graph-rest-beta) resource",
+          "Target": "whoisHistoryRecord"
+        },
+        {
+          "Id": "fd7c5536-089c-4a40-9c7f-aae6fd492ba6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "history",
+          "ChangeType": "Addition",
+          "Description": "Added the **history** relationship to the [whoisRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-whoisRecord?view=graph-rest-beta) resource.",
+          "Target": "whoisRecord"
         },
         {
           "Id": "fd7c5536-089c-4a40-9c7f-aae6fd492ba6",
@@ -62,7 +70,7 @@
       "Id": "fd7c5536-089c-4a40-9c7f-aae6fd492ba6",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2023-07-10T17:17:05.3179214Z",
+      "CreatedDateTime": "2023-07-28T14:24:12.82559Z",
       "WorkloadArea": "Security",
       "SubArea": "Threat Intelligence"
     },
