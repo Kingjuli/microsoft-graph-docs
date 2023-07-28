@@ -28,7 +28,7 @@ Inherits from [artifact](../resources/security-artifact.md).
 
 | Method                                                                   | Return type                                                                                       | Description                                                                                                       |
 | :----------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------ | :---------------------------------------------------------------------------------------------------------------- |
-| [Get host](../api/security-host-get.md)                                  | [microsoft.graph.security.host](../resources/security-host.md)                                    | Read the properties and relationships of a [microsoft.graph.security.host](../resources/security-host.md) object. |
+| [Get host](../api/security-host-get.md)                                  | [microsoft.graph.security.host](../resources/security-host.md)                                    | Read the properties and relationships of a [host](../resources/security-host.md) object. |
 | [List components](../api/security-host-list-components.md)               | [microsoft.graph.security.hostComponent](../resources/security-hostcomponent.md) collection       | Get a list of **hostComponent** resources.                                                                        |
 | [List cookies](../api/security-host-list-cookies.md)                     | [microsoft.graph.security.hostCookie](../resources/security-hostcookie.md) collection             | Get a list of **hostCookie** resources.                                                                           |
 | [List passiveDns](../api/security-host-list-passivedns.md)               | [microsoft.graph.security.passivednsrecord](../resources/security-passivednsrecord.md) collection | Get a list of **passiveDnsRecord** resources.                                                                     |
@@ -36,6 +36,7 @@ Inherits from [artifact](../resources/security-artifact.md).
 | [Get reputation](../api/security-host-get-reputation.md)                 | [microsoft.graph.security.hostReputation](../resources/security-hostreputation.md)                | Get the properties and relationships of a **hostReputation** object.                                              |
 | [List subdomains](../api/security-host-list-subdomains.md)               | [microsoft.graph.security.subdomain](../resources/security-subdomain.md) collection               | Get a list of **subdomain** resources.                                                                            |
 | [List trackers](../api/security-host-list-trackers.md)                   | [microsoft.graph.security.hostTracker](../resources/security-hosttracker.md) collection           | Get a list of **hostTracker** resources.                                                                          |
+| [Get whois](../api/security-host-get-whois.md)                           | [microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md)                      | Get the properties and relationships of a **whoisrecord** object.                                                 |
 
 ## Properties
 
@@ -47,15 +48,16 @@ Inherits from [artifact](../resources/security-artifact.md).
 
 ## Relationships
 
-| Relationship      | Type                                                                                              | Description                                                |
-| :---------------- | :------------------------------------------------------------------------------------------------ | :--------------------------------------------------------- |
-| components        | [microsoft.graph.security.hostComponent](../resources/security-hostcomponent.md) collection       | The **hostComponents** that are associated with this host. |
-| cookies           | [microsoft.graph.security.hostCookie](../resources/security-hostcookie.md) collection             | The **hostCookies** that are associated with this host.    |
-| passiveDns        | [microsoft.graph.security.passiveDnsRecord](../resources/security-passivednsrecord.md) collection | Passive DNS retrieval about this host.                     |
-| passiveDnsReverse | [microsoft.graph.security.passiveDnsRecord](../resources/security-passivednsrecord.md) collection | Reverse passive DNS retrieval about this host.             |
-| reputation        | [microsoft.graph.security.hostReputation](../resources/security-hostreputation.md)                | Represents a calculated reputation of this host.           |
-| subdomains        | [microsoft.graph.security.subdomain](../resources/security-subdomain.md) collection               | The **subdomains** that are associated with this host.     |
-| trackers          | [microsoft.graph.security.hostTracker](../resources/security-hosttracker.md) collection           | The **hostTrackers** that are associated with this host.   |
+| Relationship      | Type                                                                                              | Description                                                                                          |
+| :---------------- | :------------------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------------- |
+| components        | [microsoft.graph.security.hostComponent](../resources/security-hostcomponent.md) collection       | The **hostComponents** that are associated with this host.                                           |
+| cookies           | [microsoft.graph.security.hostCookie](../resources/security-hostcookie.md) collection             | The **hostCookies** that are associated with this host.                                              |
+| passiveDns        | [microsoft.graph.security.passiveDnsRecord](../resources/security-passivednsrecord.md) collection | Passive DNS retrieval about this host.                                                               |
+| passiveDnsReverse | [microsoft.graph.security.passiveDnsRecord](../resources/security-passivednsrecord.md) collection | Reverse passive DNS retrieval about this host.                                                       |
+| reputation        | [microsoft.graph.security.hostReputation](../resources/security-hostreputation.md)                | Represents a calculated reputation of this host.                                                     |
+| subdomains        | [microsoft.graph.security.subdomain](../resources/security-subdomain.md) collection               | The **subdomains** that are associated with this host.                                               |
+| trackers          | [microsoft.graph.security.hostTracker](../resources/security-hosttracker.md) collection           | The **hostTrackers** that are associated with this host.                                             |
+| whois             | [microsoft.graph.security.whoisrecord](../resources/security-whoisrecord.md)                      | The most recent **whoisrecord** for this host. Inherited from [host](../resources/security-host.md). |
 
 ## JSON representation
 
